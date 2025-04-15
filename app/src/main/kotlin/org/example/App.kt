@@ -8,8 +8,13 @@ class App {
         get() {
             return "Hello World!"
         }
+
 }
 
 fun main() {
+    val nombre: String = "Kotlin" // Variable inmutable con tipo explícito
+    var edad = 25 // Variable mutable con inferencia de tipo
     println(App().greeting)
+    println("Hola $nombre") // Interpolación de strings
+    println("Tengo ${edad + 1} años el próximo año") // Expresiones en templates
 }
